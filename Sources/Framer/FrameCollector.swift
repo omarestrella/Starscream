@@ -20,7 +20,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import Foundation
+import FoundationWithNetworking
 
 public protocol FrameCollectorDelegate: class {
     func didForm(event: FrameCollector.Event)

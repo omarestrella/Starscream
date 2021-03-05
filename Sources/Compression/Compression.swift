@@ -20,7 +20,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import Foundation
+import FoundationWithNetworking
 
 public protocol CompressionHandler {
     func load(headers: [String: String])

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vluxe. All rights reserved.
 //
 
-import Foundation
+import FoundationWithNetworking
 
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 public class NativeEngine: NSObject, Engine, URLSessionDataDelegate, URLSessionWebSocketDelegate {

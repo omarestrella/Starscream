@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 #if canImport(Network)
-import Foundation
+import FoundationWithNetworking
 import Network
 
 public enum TCPTransportError: Error {

@@ -20,7 +20,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import Foundation
+import FoundationWithNetworking
 
 let FinMask: UInt8          = 0x80
 let OpCodeMask: UInt8       = 0x0F

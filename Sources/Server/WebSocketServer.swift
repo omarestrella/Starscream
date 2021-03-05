@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 #if canImport(Network)
-import Foundation
+import FoundationWithNetworking
 import Network
 
 /// WebSocketServer is a Network.framework implementation of a WebSocket server

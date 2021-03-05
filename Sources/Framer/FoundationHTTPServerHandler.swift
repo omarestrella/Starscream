@@ -20,7 +20,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import Foundation
+import FoundationWithNetworking
 
 public class FoundationHTTPServerHandler: HTTPServerHandler {
     var buffer = Data()

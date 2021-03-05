@@ -29,11 +29,12 @@ let package = Package(
         ],
         dependencies: [
             .package(name: "SHA1", url: "https://github.com/rinsuki/sha1-swift", .branch("support-swiftpm")),
+            .package(url: "https://github.com/rinsuki/FoundationWithNetworking", from: "0.1.0"),
         ],
         targets: [
             .target(
                 name: "Starscream",
-                dependencies: ["CZlib", "SHA1"],
+                dependencies: ["CZlib", "SHA1", "FoundationWithNetworking"],
                 path: "Sources"),
             .target(
                 name: "CZlib",
