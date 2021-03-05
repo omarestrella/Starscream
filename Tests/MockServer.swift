@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vluxe. All rights reserved.
 //
 
-import Foundation
+import FoundationWithNetworking
 @testable import Starscream
 
 public class MockConnection: Connection, HTTPServerDelegate, FramerEventClient, FrameCollectorDelegate {

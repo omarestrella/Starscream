@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vluxe. All rights reserved.
 //
 
-import Foundation
+import FoundationWithNetworking
 
 public class WSEngine: Engine, TransportEventClient, FramerEventClient,
 FrameCollectorDelegate, HTTPHandlerDelegate {
