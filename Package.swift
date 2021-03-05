@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.2
 
 //
 //  Package.Swift
@@ -27,11 +27,13 @@ let package = Package(
         products: [
             .library(name: "Starscream", targets: ["Starscream"])
         ],
-        dependencies: [],
+        dependencies: [
+            .package(name: "SHA1", url: "https://github.com/rinsuki/sha1-swift", .branch("support-swiftpm")),
+        ],
         targets: [
             .target(
                 name: "Starscream",
-                dependencies: ["CZlib"],
+                dependencies: ["CZlib", "SHA1"],
                 path: "Sources"),
             .target(
                 name: "CZlib",

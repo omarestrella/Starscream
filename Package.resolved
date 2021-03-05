@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SHA1",
+        "repositoryURL": "https://github.com/rinsuki/sha1-swift",
+        "state": {
+          "branch": "support-swiftpm",
+          "revision": "d48584b7fe9133f783fbf781199a67f9eadb8f92",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
