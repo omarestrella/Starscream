@@ -23,22 +23,23 @@
 import PackageDescription
 
 let package = Package(
-        name: "Starscream",
-        products: [
-            .library(name: "Starscream", targets: ["Starscream"])
-        ],
-        dependencies: [
-            .package(name: "SHA1", url: "https://github.com/rinsuki/sha1-swift", .branch("support-swiftpm")),
-            .package(url: "https://github.com/rinsuki/FoundationWithNetworking", from: "0.1.0"),
-        ],
-        targets: [
-            .target(
-                name: "Starscream",
-                dependencies: ["CZlib", "SHA1", "FoundationWithNetworking"],
-                path: "Sources"),
-            .target(
-                name: "CZlib",
-                path: "CZlib",
-                linkerSettings: [ .linkedLibrary("z") ])
-        ]
+  name: "Starscream",
+  products: [
+    .library(name: "Starscream", targets: ["Starscream"]),
+  ],
+  dependencies: [
+    .package(name: "SHA1", url: "https://github.com/rinsuki/sha1-swift", .branch("support-swiftpm")),
+  ],
+  targets: [
+    .target(
+      name: "Starscream",
+      dependencies: ["CZlib", "SHA1"],
+      path: "Sources"
+    ),
+    .target(
+      name: "CZlib",
+      path: "CZlib",
+      linkerSettings: [.linkedLibrary("z")]
+    ),
+  ]
 )

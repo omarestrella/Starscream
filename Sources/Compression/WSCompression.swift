@@ -26,7 +26,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import CZlib
 
 public class WSCompression: CompressionHandler {

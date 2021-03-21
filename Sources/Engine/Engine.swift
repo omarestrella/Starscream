@@ -6,7 +6,10 @@
 //  Copyright © 2019 Vluxe. All rights reserved.
 //
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public protocol EngineDelegate: class {
     func didReceive(event: WebSocketEvent)

@@ -22,7 +22,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public enum ConnectionState {
     case connected

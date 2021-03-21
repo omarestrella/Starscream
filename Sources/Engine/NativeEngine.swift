@@ -6,7 +6,10 @@
 //  Copyright © 2019 Vluxe. All rights reserved.
 //
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 #if os(macOS) || os(iOS) || os(watchOS) || os(tvOS)
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)

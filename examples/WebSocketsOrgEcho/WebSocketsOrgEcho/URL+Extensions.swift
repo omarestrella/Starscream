@@ -6,7 +6,10 @@
 //  Copyright © 2018 Kristaps Grinbergs. All rights reserved.
 //
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension URL {
     init(staticString string: StaticString) {

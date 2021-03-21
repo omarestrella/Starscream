@@ -20,7 +20,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import FoundationWithNetworking
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 #if os(watchOS)
 public typealias FoundationHTTPHandler = StringHTTPHandler
 #else
